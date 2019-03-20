@@ -17,12 +17,13 @@ class TwoNumbersSum {
             int firstVal = i < first.size() ? first.get(i) : 0;
             int secondVal = i < second.size() ? second.get(i) : 0;
             int total = firstVal + secondVal + complement;
-            complement = 0;
+            //complement = 0;
             if (total >= 10){
                 complement = 1;
                 total -= 10;
             }
             result.add(i, total);
+
         }
 
         Collections.reverse(result);
